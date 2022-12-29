@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kumbh+Sans:wght@400;700&family=Merriweather:ital@0;1&family=Outfit:wght@400;700&family=Plus+Jakarta+Sans:wght@500;700;800&family=Red+Hat+Display:wght@500;700;900&family=Space+Mono&family=Work+Sans:wght@400;800&display=swap');
+html {
+font-size: 16px;
+}
+
+body {
+    background-color: #F2F2F2;
+    margin: 0 auto;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Plus Jakarta Sans;
+} 
+    main {
+    width: 100vw;
+    height: 100vh;
+    
+    }
+
+/*mobile*/
+
+/*the whole page*/
+        .container {
+            width: 375px;
+            height: 2615px;
+            margin: auto;                 
+       }
+
+/*upper part of the main container*/
+            .upper {
+                background-color: #FFFFFF;
+                padding: 16px;               
+            }
+
+                .skilled {
+                    font-weight: 800;
+                    font-size: 1.75rem;
+                    color: #13183F;
+                }
+
+                .header, .footer {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                }
+
+                .topButton {
+                    background-color: #13183F;   
+                }
+                
+                .firstp {
+                    color: #83869A;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-bottom: 8px;
+                }
+
+                .middleButton {
+                    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+                    border-radius: 31.5px;
+                }
+            
+                h1 {
+                    font-size: 2.5rem;
+                    color: #13183F;
+                }
+
+               .photo {
+                    width: 327px;
+                    height: 301px;
+               }
+
+               .topButton:hover {
+                    background-color: #666CA3;
+            }
+               .middleButton:hover {
+                    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+                 }  
+                .bottomButton:hover {
+                    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+                }
+
+               .tabphoto, .deskphoto {
+                    display: none;
+               }
+           
+ /*lower part of the main container*/
+            .flexcontainer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    font-family: Plus Jakarta Sans;
+                    row-gap: 40px;
+                    padding-bottom: 80px;
+                    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);            
+                    }
+
+                .checkout {
+                    width: 343px;
+                    height: 120px;
+                    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+                    border-radius: 10px;
+                    font-size: 1.5rem;                       
+                    border: none;                                                   
+                    line-height: 32px;
+                    color: #FFFFFF; 
+                    align-items: center;
+                    justify-content: center;
+                    }
+
+                .check {
+                    color: #FFFFFF;
+                }                
+
+                p {
+                    color: #83869A;
+                    padding-right: 29px;
+                }
+
+                h2 {
+                    font-size: 1.25rem;
+                    font-weight: 800;
+                    color: 13183F;
+                }
+
+                .animation, .design, .photography, .crypto, .business {
+                    width: 343px;
+                    height: 259px;        
+                    background-color: #FFFFFF;
+                    border-radius: 10px;       
+               }   
+                   
+               a {
+                    color: #F74780;
+                    font-size: 1.125rem;
+                    font-weight: 700;
+               }
+    
+               .logo {
+                    margin-top: -28px;
+               }
+
+               .footer {
+                    background-color: #13183F;    
+                    height: 120px; 
+                }
+
+                 .skilledBottom {
+                    font-weight: 800px;
+                    font-size: 1.75rem;
+                    color: #FFFFFF;
+                    margin: auto;
+                }
+
+                .bottomButton {
+                    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+                    border-radius: 28px;
+                    margin: auto;
+                }
+/*generic style*/
+
+                 .topButton, .middleButton, .bottomButton {
+                    width: 167px;
+                    height: 56px;
+                    border-radius: 28px;
+                    font-weight: 700px;
+                    font-size: 1.125rem;
+                    color: #FFFFFF;
+                    border: none;
+                 }            
+
+                h2, p, a, .logo {
+                    padding-left: 28px;                
+                }               
+
+/*tablet*/
+
+    @media screen and (min-width: 768px) {
+            
+        .container {
+                width: 768px;
+                height: 1760px;                                              
+           }
+
+            h1 {
+                width: 326px;
+                font-size: 40px;
+                }
+
+            .firstp {
+                width: 398px;
+                }
+
+            .photo {
+                display: none;
+                }
+
+            .tabphoto {
+                margin-left: 350px;
+                margin-top: -450px;
+                display: inline-block;
+                margin-right: 0;               
+           }
+          
+            .upper {
+                overflow: hidden;
+           }
+
+           .topButton {
+                z-index: +1;
+           }
+
+           .flexcontainer {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                row-gap: 40px;
+                column-gap: 11px;
+                padding-top: 24px;
+                padding-bottom: 86px;
+           }
+
+                .check {
+                    align-content: center;
+                    justify-content: center;
+                    color: white;
+                    font-size: 24px;
+                }
+          
+                .checkout, .animation, .design, .photography, .crypto, .business {
+                    background-color: white;
+                    width: 343px;
+                    height: 259px;
+            }   
+    }  
+
+/*desktop*/
+
+    @media screen and (min-width: 1440px) {
+            
+        .container {
+            width: 1440px;                                    
+           }
+
+            .flexcontainer {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                row-gap: 80px;
+                column-gap: 30px;
+                padding-top: 24px;
+                padding-bottom: 86px;
+        }
+
+                .tabphoto {
+                    display: none;
+                }
+
+                .deskphoto {
+                    width: 536px;
+                    height: 560px;
+                    margin-left: 884px;
+                    margin-top: -450px;
+                    display: inline-block;
+                    margin-right: 0;
+                    z-index: -1;
+                    }
+
+            .upper {
+                padding-left: 165px;
+                padding-right: 100px;               
+            }
+
+                .checkout, .animation, .design, .photography, .crypto, .business {
+                    height: 322px;
+                }
+                           
+                .skilledBottom {
+                    margin-left: 165px;
+                }
+
+                .bottomButton {
+                    margin-right: 165px;
+                }
+            }
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
